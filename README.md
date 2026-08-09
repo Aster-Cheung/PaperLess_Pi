@@ -1,6 +1,6 @@
 # Raspberry_Pi_Zero_2_W
 
-#Steps
+Steps
 1. sudo apt update
 2. sudo apt install libcamera-apps -y
 3. sudo apt install python3-pip -y
