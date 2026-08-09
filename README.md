@@ -11,5 +11,4 @@ cd PaperLessPi
 
 
 #Result
-<img width="2904" height="1816" alt="20260809_190954" src="https://github.com/user-attachments/assets/fb4d38b3-4e19-4c1d-bdc8-1e2c87465efd" />
 <img width="1452" height="429" alt="image" src="https://github.com/user-attachments/assets/40df953b-348a-418d-ae04-b788ce69447c" />
