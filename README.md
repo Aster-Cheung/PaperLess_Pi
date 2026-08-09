@@ -10,5 +10,7 @@ cd PaperLessPi
 6. sudo apt update && sudo apt install libopenblas-dev -y
 
 
-#Result
-<img width="1452" height="429" alt="image" src="https://github.com/user-attachments/assets/40df953b-348a-418d-ae04-b788ce69447c" />
+# Result
+<img width="2904" height="1816" alt="20260809_190954 (2)" src="https://github.com/user-attachments/assets/5b0e28e5-26af-49ec-907d-b19c21b88e96" />
+<img width="1452" height="429" alt="image" src="https://github.com/user-attachments/assets/3be1540d-3a71-4c22-a316-c2430cbdfb72" />
+
