@@ -14,3 +14,8 @@ cd PaperLessPi
 <img width="2904" height="1816" alt="20260809_190954 (2)" src="https://github.com/user-attachments/assets/5b0e28e5-26af-49ec-907d-b19c21b88e96" />
 <img width="1452" height="429" alt="image" src="https://github.com/user-attachments/assets/3be1540d-3a71-4c22-a316-c2430cbdfb72" />
 
+# Conclusion
+The receipt needs to be printed clearly and dark enough for the camera to detect all of the words accurately. In the left receipt, the text was too faded, which caused the AI to miss some words and make assumptions about the unclear information.
+
+# Future work
+
