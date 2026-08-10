@@ -21,7 +21,14 @@ def process_image_with_mistral(base64_image):
         print("Processing asset...")
 
         extraction_prompt = """
-        Please extract the following information from the document image provided and structure it as a JSON Object:
+
+        Some critical rules that you need to follow when you do the analyses:
+        1. Look for iconic logos or layout markers.
+        - If you see a bullseye Logo or a target symbol, the `store_name` is strictly "Target".
+        - If you see a flower that is made of six strokes or the word "walmart", the `store_name` is strictly "Walmart".
+        - If you see a double-tail mermaid logo, the `store_name` is strictly "Starbucks".
+        
+        2. Please extract the following information from the document image provided and structure it as a JSON Object:
         - `store_name`: The name of the business or store.
         - `transaction_date`: The date of the transaction (use UUU-MM-DD format).
         - `tax_amount`: The tax charged (if visible).
