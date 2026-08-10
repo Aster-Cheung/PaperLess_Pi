@@ -1,4 +1,13 @@
-# Raspberry_Pi_Zero_2_W
+# PaperLess_Pi
+The purpose of this project is to use what I have learned in Cornell Machine Learning Foundation Course to Raspberry Pi Zero 2W, using AI to capture picture of receipts and extract values to put in excel sheet.
+
+## Hardware
+|Name of Hardware| Hardware Picture|
+-------------- | ----------------------
+|Raspberry Pi Zero 2W| <img width="2254" height="861" alt="20260808_181627" src="https://github.com/user-attachments/assets/6d04cf00-e756-4ea4-9c17-c0456c968194" />|
+|Raspberry Pi Camera V 1.3| <img width="4032" height="1816" alt="20260809_223157" src="https://github.com/user-attachments/assets/30ff8352-a874-48fb-950c-af60c2e835f5" />|
+
+
 
 Steps
 1. sudo apt update
