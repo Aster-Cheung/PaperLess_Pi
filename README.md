@@ -13,7 +13,7 @@ The purpose of this project is to apply what I learned in Cornell’s Machine Le
 - Raspberry Pi OS: Legacy 32-bit
 
 
-Steps:
+## Steps:
 - Run in Powershell
 - Login to your Raspberry Pi
 
@@ -62,6 +62,32 @@ Steps:
     ```
     export MISTRAL_API_KEY="your_actual_key_here"
     ```
+
+### To view data
+1. Type ```python3``` and press enter, you will see the ```>>>``` symbol
+2. Type these 2 lines:
+   ```
+   import pandas as pd
+   pd.read_csv("receipts_log.csv")
+   ```
+
+### To view spreadsheet
+1. Type ```python3 -m http.server 8000```, press enter
+
+   <img width="1008" height="79" alt="image" src="https://github.com/user-attachments/assets/6df85961-99fd-4821-8a6b-d040fd3486ef" />
+   
+2. Go to any browser, type the Pi's IP:8000, for example:
+
+   <img width="320" height="47" alt="image" src="https://github.com/user-attachments/assets/c33b56d5-cf6b-4cf5-957d-0bccee311d75" />
+   
+3. Click the following and download the spreadsheet:
+   
+   <img width="338" height="190" alt="image" src="https://github.com/user-attachments/assets/e04565e7-ecab-4baf-b161-125f546f53eb" />
+
+4. View the spreadsheet:
+
+   <img width="1306" height="314" alt="image" src="https://github.com/user-attachments/assets/92d9de4d-5162-4550-9b2f-25ca1bee83cc" />
+
 
 # Result
 <img width="2904" height="1816" alt="20260809_190954 (2)" src="https://github.com/user-attachments/assets/5b0e28e5-26af-49ec-907d-b19c21b88e96" />
