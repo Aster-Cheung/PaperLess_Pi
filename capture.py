@@ -33,7 +33,13 @@ def process_image_with_mistral(base64_image):
         - `transaction_date`: The date of the transaction (use UUU-MM-DD format).
         - `tax_amount`: The tax charged (if visible).
         - `total_amount`: The final payment total.
-        - `items`: ["item1", "item2"]
+        - `items`: [
+                {
+                        "name": "The name of the item",
+                        "quantity": 1,
+                        "price_per_item": 0.00
+                }
+        ]
         """
 
         Mistral_response = client.chat.complete(
@@ -58,9 +64,20 @@ def log_with_pandas(data):
         from datetime import datetime
         timestamp = datetime.now().strftime("%Y-%m-%d %H:%M:%S")
 
-        # Extract list items and join them together
-        item_list = data.get('items',[])
-        item_string = ",".join(item_list) if isinstance(item_list,list) else str(item_list)
+        #Loop through new detailed items list to build a clean text string
+        formatted_items = []
+        raw_items_list = data.get('items',[])
+
+        if isinstance(raw_items_list, list):
+                for item in raw_items_list:
+                        if isinstance(item, dict):
+                                name = item.get('name','Unknown Item')
+                                qty = item.get('quantity',1)
+                                price = item.get('price_per_item', 0.00)
+                                formatted_items.append(f"{qty} x {name} (${price:.2f})")
+                        else:
+                                formatted_items.append(str(item))
+        items_string = ", ".join(formatted_items)
 
         # Map matching columns
         new_record = pd.DataFrame([{
