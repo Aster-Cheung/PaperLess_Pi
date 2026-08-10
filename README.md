@@ -1,5 +1,5 @@
 # PaperLess_Pi
-The purpose of this project is to use what I have learned in Cornell Machine Learning Foundation Course to Raspberry Pi Zero 2W, using AI to capture picture of receipts and extract values to put in excel sheet.
+The purpose of this project is to apply what I learned in Cornell’s Machine Learning Foundations course to a Raspberry Pi Zero 2 W. The project uses AI to capture pictures of receipts, extract relevant information from them, and organize the extracted values into an Excel spreadsheet.
 
 ## Hardware
 |Name of Hardware| Hardware Picture|
