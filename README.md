@@ -9,14 +9,48 @@ The purpose of this project is to apply what I learned in Cornell’s Machine Le
 
 
 
-Steps
-1. sudo apt update
-2. sudo apt install libcamera-apps -y
-3. sudo apt install python3-pip -y
-4. pip3 install google-genai --break-system-packages (originally pip3 install google-genai - tell Pi that I know what I am doing)
-5. mkdir PaperLessPi
-cd PaperLessPi
-6. sudo apt update && sudo apt install libopenblas-dev -y
+Steps:
+1. Install any updates
+   ```
+   sudo apt update
+   ```
+   
+3. Install native python package installer
+   ```
+   sudo apt install python3-pip -y
+   ```
+   
+5. Install camera utility (depending on which OS system)
+   |OS| Command |
+   -----|--------
+   |Modern OS| ```sudo apt install rpi-cam-apps -y```|
+   |Legacy or Lite OS| ```sudo apt install libcamera-apps -y```|
+
+6. Install System Level Libraries (Math)
+   ```
+   sudo apt install libopenblas-dev -y
+   ```
+
+8. Install Mistral AI Python SDK Framework
+   ```
+   pip3 install mistralai --break-system-packages
+   ```
+
+9. Create initial folder
+   ```
+   mkdir PaperLessPi
+   ```
+
+10. Step into initial folder
+    ```
+    cd PaperLessPi
+    ```
+
+11. Create / Open file
+    ```
+    nano capture.py
+    ```
+
 
 
 # Result
