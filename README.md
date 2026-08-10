@@ -6,10 +6,17 @@ The purpose of this project is to apply what I learned in Cornell’s Machine Le
 -------------- | ----------------------
 |Raspberry Pi Zero 2W| <img width="2254" height="861" alt="20260808_181627" src="https://github.com/user-attachments/assets/6d04cf00-e756-4ea4-9c17-c0456c968194" />|
 |Raspberry Pi Camera V 1.3| <img width="4032" height="1816" alt="20260809_223157" src="https://github.com/user-attachments/assets/30ff8352-a874-48fb-950c-af60c2e835f5" />|
+|SD Card| 32 bit |
 
+## Software
+- Mistral AI
+- Raspberry Pi OS: Legacy 32-bit
 
 
 Steps:
+- Run in Powershell
+- Login to your Raspberry Pi
+
 1. Install any updates
    ```
    sudo apt update
@@ -51,7 +58,10 @@ Steps:
     nano capture.py
     ```
 
-
+12. Create an account in Mistral AI and obtain an API key, go to powershell and run the following
+    ```
+    export MISTRAL_API_KEY="your_actual_key_here"
+    ```
 
 # Result
 <img width="2904" height="1816" alt="20260809_190954 (2)" src="https://github.com/user-attachments/assets/5b0e28e5-26af-49ec-907d-b19c21b88e96" />
